@@ -67,6 +67,9 @@ span {
     .trusted-by-block {
         display: none;
     }
+    .popular-services {
+        display: none;
+    }
 }
 
 .searcher {
@@ -95,6 +98,7 @@ span {
     width: 100%;
     max-width: 60%;
     color: black;
+    font-family: 'Quicksand';
 }
 
 .mat-chip-list {
@@ -153,6 +157,7 @@ h2 {
 .mobile-search-field {
     width: 70%;
     color: black;
+    font-family: 'Quicksand';
 }
 
 .mobile-search-btn {
@@ -167,14 +172,16 @@ h2 {
 
 .trusted-by-block {
     background-color: #fcfaf8;
-    height: 100px;
+    /* height: 100px; */
     text-align: center;
+    height: auto;
+    padding-bottom: 35px;
 }
 
-.trusted-by-block span {
-    margin-top: 50px !important;
+#trusted-by-label {
+    padding-top: 550px;
     font-size: 20px;
-    color: black;
+    color: rgb(126, 126, 126);
     font-weight: bold !important; 
 }
 
@@ -182,12 +189,34 @@ h2 {
     font-size: 25px;
 }
 
+.companies {
+    padding-top: 35px;
+    font-size: 25px;
+    color: #727272;
+}
+
+.companies span {
+    margin-right: 50px;
+}
+
 .search-btn {
     margin-left: 15px;
     margin-top: 3px;
     height: 61px;
     background-color: white;
-    color: black;
+    color: #001f3f;
     font-weight: bold;
     font-size: 20px;
+}
+
+.popular-services {
+    margin-top: 80px;
+    margin-left: 12%;
+    margin-right: 12%;
+    height: auto;
+    padding-bottom: 15%;
+}
+
+#popular-service-label {
+    margin-left: 0;
 }

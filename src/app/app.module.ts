@@ -13,6 +13,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatCardModule } from '@angular/material/card';
+
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,8 @@ import { MatChipsModule } from '@angular/material/chips';
     MatFormFieldModule,
     MatInputModule,
     MatChipsModule,
+    IvyCarouselModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
