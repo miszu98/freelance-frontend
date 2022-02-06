@@ -71,9 +71,9 @@
         </div>
         <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
     </div>
-    <!-- <div class="desc-image">
+    <div class="desc-image">
       <img src="\assets\images\Office-365-2.jpg" alt="Here should be image">
-    </div> -->
+    </div>
 </div>
 
 <div class="marketplace">
@@ -150,6 +150,18 @@
             </div>
           </div>
         </div>
+    </div>
+    <div class="trusted-by-block-mobile">
+      <div class="companies">
+        <span>Facebook</span>
+        <span>Google</span>
+        <span>NETFLIX</span>
+      </div>
+    </div>
+    <h1 id="popular-service-label">Popular professional services</h1>
+    <div class="carousel-services">
+      <carousel [arrowsTheme]="'dark'" [images]="popularServicesImages" [margin]="50" [height]="400" [cellsToShow]="1" #carousel>
+      </carousel>
     </div>
   </mat-drawer-container>
 </div>

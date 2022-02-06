@@ -48,6 +48,51 @@ span {
     padding-right: 15px;
 }
 
+.description {
+    width: 100%;
+    /* height: 250px; */
+    display: flex;
+    height: auto;
+    background-color: #edf7ff;
+    padding-bottom: 80px;
+}
+
+.trusted-by-block-mobile {
+    text-align: center;
+    background-color: #eeeded;
+    padding-bottom: 30px;
+}
+
+.companies {
+    padding-top: 35px;
+    font-size: 25px;
+    color: #727272;
+}
+
+.companies span {
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+#popular-service-label {
+    /* margin-left: 12%; */
+    margin-top: 80px;
+    margin-left: 12%;
+    color: #414141;
+}
+
+
+.carousel-services {
+    margin-top: 50px;
+    margin-left: 12%;
+    margin-right: 12%;
+    height: auto;
+    /* padding-bottom: 15%; */
+    margin-bottom: 130px;
+}
+
+
+
 @media screen and (max-width: 550px) {
     .marketplace {
         display: none;
@@ -56,12 +101,12 @@ span {
         display: none;
     }
     .description {
-        display: none;
+        padding-bottom: 0;
     }
     .points {
         display: none;
     }
-    .text {
+    .desc-image {
         display: none;
     }
     .header {
@@ -80,11 +125,28 @@ span {
         margin-right: 5%;
     }
 
+    .companies {
+        font-size: 15px;
+    }
+
+    .companies span {
+        margin-right: 10px;
+    }
+
     .trusted-by-block {
         display: none;
     }
     .popular-services {
         display: none;
+    }
+
+    .carousel-services {
+        margin-top: 35px;
+    }
+    
+    #popular-service-label {
+        margin-top: 30px;
+        font-size: 25px;
     }
 }
 
@@ -214,16 +276,7 @@ h2 {
     font-size: 25px;
 }
 
-.companies {
-    padding-top: 35px;
-    font-size: 25px;
-    color: #727272;
-}
 
-.companies span {
-    margin-right: 50px;
-    font-weight: bold;
-}
 
 .search-btn {
     margin-left: 15px;
@@ -236,30 +289,7 @@ h2 {
 }
 
 
-#popular-service-label {
-    /* margin-left: 12%; */
-    margin-top: 80px;
-    margin-left: 12%;
-    color: #414141;
-}
 
-.carousel-services {
-    margin-top: 50px;
-    margin-left: 12%;
-    margin-right: 12%;
-    height: auto;
-    /* padding-bottom: 15%; */
-    margin-bottom: 130px;
-}
-
-.description {
-    width: 100%;
-    /* height: 250px; */
-    display: flex;
-    height: auto;
-    background-color: #edf7ff;
-    padding-bottom: 80px;
-}
 
 .points {
     padding-top: 70px;
@@ -291,15 +321,7 @@ h2 {
     /* font-size: 15px; */
 }
 
-.desc-image {
-    margin-top:100px;
-    margin-left: 5%;
-    margin-right: 12%;
-}
 
-.desc-image img {
-
-}
 
 .marketplace {
     margin-top: 80px;
@@ -371,4 +393,38 @@ h2 {
 
 hr {
     border-top: 1px solid rgb(201, 201, 201);
+}
+
+.desc-image {
+    margin-top:100px;
+    /* margin-left: 5%; */
+    margin-right: 12%;
+}
+
+.desc-image img {
+    width: 50vw;
+    margin-left: 2vw;
+    /* border-radius: 250px; Intresting option */
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 1500px) {
+    .description {
+        display: block;
+    }
+
+    .points {
+        width: 90%;
+        margin-left: 1%;
+    }
+
+    .desc-image {
+        margin-top: 50px;
+    }
+
+    .desc-image img {
+        width: 80%;
+        margin-left: 12%;
+    }
+
 }
