@@ -14,6 +14,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 
@@ -33,7 +34,8 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
     MatInputModule,
     MatChipsModule,
     IvyCarouselModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

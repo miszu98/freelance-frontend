@@ -26,19 +26,26 @@ export class AppComponent {
 
   @HostListener('window:resize', ['$event'])
   onWindoResize(event: any) {
-     
-    if (window.innerWidth <= 1120) {
+    if (window.innerWidth <= 660) {
+      this.carousel.cellsToShow = 1;
+      return;
+    }
+    if (window.innerWidth <= 1150) {
       this.carousel.cellsToShow = 2;
       return;
     }
-    if (window.innerWidth <= 1580) {
+    if (window.innerWidth > 1800) {
+      this.carousel.cellsToShow = 5;
+      return;
+    }
+    if (window.innerWidth <= 1550) {
       this.carousel.cellsToShow = 3;
       return;
     } 
-    if (window.innerWidth > 1580) {
-      this.carousel.cellsToShow = 5;
+    if (window.innerWidth <= 1800) {
+      this.carousel.cellsToShow = 4;
       return;
-    } 
+    }
 
     console.log(window.innerWidth);
  
