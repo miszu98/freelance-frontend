@@ -1,0 +1,85 @@
+.login-panel {
+    text-align: center;
+}
+
+.login-panel h1 {
+    color: #414141;
+    margin-bottom: 35px;
+}
+
+.login-options {
+    display: block;
+}
+
+.login-options img {
+    margin-left: -30px;
+    margin-right: 15px;
+}
+
+::ng-deep #fb {
+    /* background-color: #40559b; */
+    background-color: #3a5aa0;
+    font-family: 'Quicksand';
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    /* width: 370px; */
+    width: 92%;
+    margin-bottom: 20px;
+}
+
+::ng-deep #login-option {
+    font-family: 'Quicksand';
+    font-size: 17px;
+    font-weight: bold;
+    color: #414141;
+    height: 50px;
+    /* width: 300px; */
+    width: 92%;
+    border: 1px solid #cfcfcf;
+    margin-bottom: 20px;
+}
+
+#login-option img {
+    margin-right: 40px;
+}
+
+.or-line {
+    display: flex;
+}
+
+.or-line hr {
+    /* width: 150px; */
+    width: 38%;
+    height: 0px;
+}
+
+.register-form .mat-form-field {
+    width: 92%;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+::ng-deep .register-form .mat-focused .mat-form-field-label {
+    color: #001f3f !important;
+}
+  
+::ng-deep .register-form .mat-form-field-underline {
+    background-color: #001f3f !important;
+} 
+  
+::ng-deep .register-form .mat-form-field-ripple {
+   background-color: #001f3f !important;;
+}
+
+#register-btn {
+    width: 92%;
+    background-color: #5db468;
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 17px;
+
+}

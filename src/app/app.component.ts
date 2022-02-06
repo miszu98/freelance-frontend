@@ -1,5 +1,7 @@
 import { Component, HostListener, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { CarouselComponent } from 'angular-responsive-carousel';
+import { LoginComponent } from './Components/Forms/login/login.component';
 
 @Component({
   selector: 'app-root',
@@ -20,8 +22,18 @@ export class AppComponent {
     {path: '../assets/images/animated-explainer-2x.jpg'}
   ];
 
+  constructor(private dialog: MatDialog) {}
+
   ngOnInit() {
-    
+    this.openSignUpForm();
+  }
+
+  public openSignUpForm() {
+    let window = this.dialog.open(LoginComponent, 
+      {
+        height: '500px',
+        width: '450px'
+      });
   }
 
   @HostListener('window:resize', ['$event'])

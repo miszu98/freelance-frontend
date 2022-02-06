@@ -6,6 +6,21 @@
     color: white;
 }
 
+.menu h1 {
+    cursor: pointer;
+}
+
+.menu h1:hover {
+    color: rgb(151, 151, 151);;
+}
+.btns-menu span {
+    cursor: pointer;
+}
+
+.btns-menu span:hover {
+    color: rgb(151, 151, 151);
+}
+
 .mobile-header {
     background-color: #001f3f;
     width: 100%;
