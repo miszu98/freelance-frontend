@@ -43,23 +43,35 @@
 </div>
 <div class="popular-services">
   <h1 id="popular-service-label">Popular professional services</h1>
-  <carousel [arrowsTheme]="'dark'" [height]="300" [cellWidth]="50"  [cellsToShow]="5" >
-    <div class="carousel-cell">
-        <img src="\assets\images\logo-design-2x.jpg" alt="Here should be image">
+  <div class="carousel-services">
+    <carousel [arrowsTheme]="'dark'" [images]="popularServicesImages" [margin]="100" [height]="300" [cellsToShow]="5">
+    </carousel>
+  </div>
+</div>
+<div class="description">
+    <div class="points">
+        <h1>A whole world of freelance talent at your fingertips</h1>
+        <!-- <span>The best for every budget</span> -->
+        <div class="text">
+          <mat-icon>check_circle_outline</mat-icon><span>The best for every budget</span>
+        </div>
+        <p>Find high-quality services at every price point. No hourly rates, just project-based pricing.</p>
+        <div class="text">
+          <mat-icon>check_circle_outline</mat-icon><span>Quality work done quickly</span>
+        </div>
+        <p>Find the right freelancer to begin working on your project within minutes.</p>
+        <div class="text">
+          <mat-icon>check_circle_outline</mat-icon><span>Protected payments, every time</span>
+        </div>
+        <p>Always know what you'll pay upfront. Your payment isn't released until you approve the work.</p>
+        <div class="text">
+          <mat-icon>check_circle_outline</mat-icon><span>24/7 support</span>
+        </div>
+        <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
     </div>
-    <div class="carousel-cell">
-        <img src="\assets\images\social-2x.jpg" alt="Here should be image">
-    </div>
-    <div class="carousel-cell">
-        <img src="\assets\images\voiceover-2x.jpg" alt="Here should be image">
-    </div>
-    <div class="carousel-cell">
-      <img src="\assets\images\wordpress-2x.jpg" alt="Here should be image">
-    </div>
-    <div class="carousel-cell">
-      <img src="\assets\images\animated-explainer-2x.jpg" alt="Here should be image">
-    </div>
-  </carousel>
+    <!-- <div class="desc-image">
+      <img src="\assets\images\Office-365-2.jpg" alt="Here should be image">
+    </div> -->
 </div>
 
 
