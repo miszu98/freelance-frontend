@@ -49,6 +49,21 @@ span {
 }
 
 @media screen and (max-width: 550px) {
+    .marketplace {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .description {
+        display: none;
+    }
+    .points {
+        display: none;
+    }
+    .text {
+        display: none;
+    }
     .header {
         display: none;
     }
