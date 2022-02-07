@@ -357,7 +357,8 @@ h2 {
 
 .points {
     padding-top: 70px;
-    margin-left: 8%;
+    /* margin-left: 8%; */
+    margin-left: 9%;
     width: 32%;
     color: #414141;
 }

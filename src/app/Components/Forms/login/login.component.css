@@ -4,7 +4,9 @@
 
 .login-panel h1 {
     color: #414141;
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .login-options {
@@ -81,5 +83,43 @@
     font-family: 'Quicksand';
     font-weight: bold;
     font-size: 17px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
 
+.footer hr {
+    /* width: 100%; */
+    width: 91%;
+    height: 0px;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+#sign-in-btn {
+    color: #5db468;
+    cursor: pointer;
+}
+
+
+#sign-in-btn:hover {
+    color: #001f3f;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+   /* margin-left:38%;
+   margin-right: 38%; */
+   margin-bottom: 80px;
+   margin-top: 70px;
+}
+
+::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #001f3f;
+}
+
+.mat-hint {
+    color: red;
 }
