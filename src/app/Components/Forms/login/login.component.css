@@ -5,8 +5,8 @@
 .login-panel h1 {
     color: #414141;
     /* margin-bottom: 35px; */
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .login-options {
@@ -58,10 +58,11 @@
 }
 
 .register-form .mat-form-field {
+    margin-top: 25px;
     width: 92%;
     font-family: 'Quicksand';
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
 }
 
 ::ng-deep .register-form .mat-focused .mat-form-field-label {

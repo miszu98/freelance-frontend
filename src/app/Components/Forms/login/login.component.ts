@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { RegisterService } from 'src/app/Services/RegisterService/register.service';
+import { RegisterComponent } from '../register/register.component';
 
 @Component({
   selector: 'app-login',
@@ -18,9 +20,17 @@ export class LoginComponent implements OnInit {
     email: new FormControl(null, Validators.email)
   })
 
-  constructor(private registerService: RegisterService) { }
+  constructor(private registerService: RegisterService, private  dialog: MatDialog) { }
 
   ngOnInit(): void {
+    this.openRegisterForm();
+  }
+
+  private openRegisterForm() {
+    let dialog =  this.dialog.open(RegisterComponent, {
+      height: '800px',
+      width: '600px'
+    })
   }
 
   public checkIfUserExist() {
@@ -36,6 +46,9 @@ export class LoginComponent implements OnInit {
             this.accountExist = value.status;
             if (this.accountExist == true) {
               this.errorMessage = "User with email: " + control?.value + " already exist";
+            } else {
+              this.dialog.closeAll();
+              this.openRegisterForm();
             }
           }, 3000)
         },

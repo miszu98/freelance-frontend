@@ -31,7 +31,8 @@ export class AppComponent {
   public openSignUpForm() {
     let window = this.dialog.open(LoginComponent, 
       {
-        height: '500px',
+        // height: '500px',
+        height: '700px',
         width: '450px'
       });
   }

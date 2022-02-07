@@ -23,11 +23,13 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { LoginComponent } from './Components/Forms/login/login.component';
+import { RegisterComponent } from './Components/Forms/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

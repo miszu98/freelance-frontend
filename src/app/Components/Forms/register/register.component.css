@@ -1,0 +1,35 @@
+.register-block {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    color: #414141;;
+}
+
+.register-block span {
+    font-size: 22px;
+}
+
+::ng-deep .mat-form-field .mat-focused .mat-form-field-label {
+    color: #001f3f !important;
+}
+  
+::ng-deep .mat-form-field .mat-form-field-underline {
+    background-color: #001f3f !important;
+} 
+  
+::ng-deep .mat-form-field .mat-form-field-ripple {
+   background-color: #001f3f !important;;
+}
+
+.mat-form-field {
+    width: 100%;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 55px;
+}
