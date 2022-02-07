@@ -340,8 +340,6 @@ h2 {
     font-size: 25px;
 }
 
-
-
 .search-btn {
     margin-left: 15px;
     margin-top: 3px;
@@ -352,8 +350,68 @@ h2 {
     font-size: 20px;
 }
 
+.top-clickable-service {
+    margin-top: 35px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    color: #414141;
+}
 
+.top-clickable-service h1 {
+    margin-right: 12%;
+}
 
+.services {
+    text-align: center;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.services h3 {
+    font-family: 'Quicksand';
+}
+
+.services .mat-card {
+    width: 17vw;
+    margin-right: 2%;
+    height: auto;
+    padding-bottom: 55px;
+}
+
+.services img {
+    margin-top: 15px;
+    height: 75%;
+    width: 75%;
+}
+
+@media screen and (max-width: 645px) {
+    .services h3 {
+        font-size: 15px;
+    }
+    .services img {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .services {
+        display: block;
+        
+    }
+    .services h3 {
+        font-size: 20px;
+    }
+    .top-clickable-service {
+        margin-left: 12%;
+    }
+    .services .mat-card {
+        width: 45vw;
+        margin-bottom: 25px;
+    }
+
+}
 
 .points {
     padding-top: 70px;

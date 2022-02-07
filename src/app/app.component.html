@@ -44,6 +44,23 @@
     <span>NETFLIX</span>
   </div>
 </div>
+<div class="top-clickable-service">
+  <h1>The most searching services</h1>
+  <div class="services">
+    <mat-card>
+      <h3>Programming & Tech</h3>
+      <img src="\assets\images\coding.png" alt="Here should be image">
+    </mat-card>
+    <mat-card>
+      <h3>Graphics & Design</h3>
+      <img src="\assets\images\illustration-color.png" alt="Here should be image">
+    </mat-card>
+    <mat-card>
+      <h3>Video & Animation</h3>
+      <img src="\assets\images\animation.png" alt="Here should be image">
+    </mat-card>
+  </div>
+</div>
 <div class="popular-services">
   <h1 id="popular-service-label">Popular professional services</h1>
   <div class="carousel-services">
@@ -159,7 +176,7 @@
     </div>
     <h1 id="popular-service-label">Popular professional services</h1>
     <div class="carousel-services">
-      <carousel [arrowsTheme]="'dark'" [images]="popularServicesImages" [margin]="50" [height]="400" [cellsToShow]="1" #carousel>
+      <carousel [arrowsTheme]="'dark'" [borderRadius]="50" [images]="popularServicesImages" [margin]="50" [height]="400" [cellsToShow]="1" #carousel>
       </carousel>
     </div>
     <div class="description-mobile">
