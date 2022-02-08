@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { User } from 'src/app/Models/User';
 import { RegisterService } from 'src/app/Services/RegisterService/register.service';
 
@@ -15,17 +16,18 @@ export class RegisterComponent implements OnInit {
   loading = false;
 
   userRegisterForm = new FormGroup({
-    email: new FormControl(null, [Validators.required, Validators.email]),
-    password: new FormControl(null, [Validators.required]),
-    password2: new FormControl(null, [Validators.required]),
-    firstName: new FormControl(null, [Validators.required]),
-    lastName: new FormControl(null, [Validators.required])
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [Validators.required]),
+    password2: new FormControl('', [Validators.required]),
+    firstName: new FormControl('', [Validators.required]),
+    lastName: new FormControl('', [Validators.required])
   });
 
   
-  constructor(private registerService: RegisterService) { }
+  constructor(@Inject(MAT_DIALOG_DATA) private data: any, private registerService: RegisterService) { }
 
   ngOnInit(): void {
+    this.userRegisterForm.get('email')?.setValue(this.data.email);
   }
 
   public registerUser() {
@@ -35,6 +37,7 @@ export class RegisterComponent implements OnInit {
       value => {
         this.loading = false;
         console.log(value);
+        window.location.href = 'http://localhost:4200/main';
       },
       error => {
         this.loading = false;

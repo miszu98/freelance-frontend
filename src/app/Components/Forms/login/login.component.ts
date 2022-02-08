@@ -23,13 +23,15 @@ export class LoginComponent implements OnInit {
   constructor(private registerService: RegisterService, private  dialog: MatDialog) { }
 
   ngOnInit(): void {
-    this.openRegisterForm();
   }
 
   private openRegisterForm() {
     let dialog =  this.dialog.open(RegisterComponent, {
       height: '800px',
-      width: '600px'
+      width: '600px',
+      data: {
+        email: this.registerForm.get('email')?.value
+      }
     })
   }
 

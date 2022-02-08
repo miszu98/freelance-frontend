@@ -25,7 +25,6 @@ export class AppComponent {
   constructor(private dialog: MatDialog) {}
 
   ngOnInit() {
-    this.openSignUpForm();
   }
 
   public openSignUpForm() {
