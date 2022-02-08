@@ -141,6 +141,7 @@ span {
 }
 
 
+
 @media screen and (max-width: 550px) {
     .marketplace {
         display: none;
@@ -258,6 +259,11 @@ span {
     width: 50%;
 }
 
+.header-image img {
+    /* height: 50vh; */
+    /* height: 50vh; */
+    width: 35vw;
+}
 
 .header-content {
     display: flex;

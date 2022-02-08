@@ -33,3 +33,45 @@ h1 {
 form {
     margin-top: 55px;
 }
+
+#register-btn {
+    width: 100%;
+    background-color: #5db468;
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.labels {
+    float: left;
+}
+
+.header {
+    width: 100%;
+    display: inline-block;
+}
+
+.loading {
+    margin-top: 27px;
+    float: right;
+}
+
+.mat-spinner {
+    zoom: 0.5
+}
+
+@media screen and (max-width: 490px) {
+    .loading {
+        float: none;
+    }
+    .labels {
+        float: none;
+    }
+    .loading {
+        margin-top: 15px;
+    }
+    form {
+        margin-top: 25px;
+    }
+}
