@@ -2,6 +2,7 @@ import { Component, HostListener, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CarouselComponent } from 'angular-responsive-carousel';
 import { LoginComponent } from './Components/Forms/login/login.component';
+import { SignInComponent } from './Components/Forms/sign-in/sign-in.component';
 
 @Component({
   selector: 'app-root',
@@ -32,6 +33,14 @@ export class AppComponent {
       {
         // height: '500px',
         height: '700px',
+        width: '450px'
+      });
+  }
+  
+  public openSignInForm() {
+    let loginForm = this.dialog.open(SignInComponent,
+      {
+        height: '500px',
         width: '450px'
       });
   }

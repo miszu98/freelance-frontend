@@ -1,0 +1,87 @@
+h1 {
+   color: #414141;
+}
+
+.header {
+    margin-top: 45px;
+    text-align: center;
+}
+
+
+.mat-form-field {
+    width: 100%;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.fields {
+    padding-top: 2px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#login-btn {
+    font-weight: bold;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    background-color: #5db468;
+    color: white;
+    width: 100%;
+}
+
+.btns {
+    display: flex;  
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    margin-top: 10px;
+}
+
+.remember-me {
+    float: left;
+    width: 57%;
+}
+
+.forgot-password {
+    float: right;
+    /* margin-right: 5px; */
+}
+
+.forgot-password span {
+    color: #5db468;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#register-link {
+    color: #5db468;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 35px;
+}
+.link-to-register {
+    display: flex;
+    justify-content: center;
+}
+
+::ng-deep .mat-form-field .mat-focused .mat-form-field-label {
+    color: #001f3f !important;
+}
+  
+::ng-deep .mat-form-field .mat-form-field-underline {
+    background-color: #001f3f !important;
+} 
+  
+::ng-deep .mat-form-field .mat-form-field-ripple {
+   background-color: #001f3f !important;;
+}
+
+::ng-deep .mat-checkbox .mat-accent .mat-checkbox-anim-unchecked-checked .mat-checkbox-checked {
+    color: #001f3f;
+}

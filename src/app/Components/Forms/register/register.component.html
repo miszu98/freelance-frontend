@@ -29,8 +29,11 @@
         <p>
             <mat-form-field appearance="legacy">
               <mat-label>Repeat password</mat-label>
-              <input matInput formControlName="password2" placeholder="Retype your password" required>
+              <input matInput formControlName="password2" placeholder="Retype your password" [type]="hideSecondPasswd ? 'password' : 'text'" required>
               <mat-error *ngIf="userRegisterForm.get('password2')?.invalid">{{getErrorMessage('password2')}}</mat-error>
+              <button mat-icon-button matSuffix (click)="hideSecondPasswd = !hideSecondPasswd" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hideSecondPasswd">
+                <mat-icon>{{hideSecondPasswd ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
             </mat-form-field>
         </p>
         <p>

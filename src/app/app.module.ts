@@ -20,16 +20,19 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { LoginComponent } from './Components/Forms/login/login.component';
 import { RegisterComponent } from './Components/Forms/register/register.component';
+import { SignInComponent } from './Components/Forms/sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +53,7 @@ import { RegisterComponent } from './Components/Forms/register/register.componen
     MatProgressSpinnerModule,
     FormsModule,
     ReactiveFormsModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
