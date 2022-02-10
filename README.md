@@ -10,16 +10,16 @@ Link to repository with backend: https://github.com/miszu98/freelance-backend
 
 ### Register
 <p align="left">
-  <img src="https://i.imgur.com/qII69Mh.png" width="1100px" height="400px">
+  <img src="https://i.imgur.com/qII69Mh.png">
 </p>
 <p align="left">
-  <img src="https://i.imgur.com/WBKXT73.png" width="1100px" height="400px">
+  <img src="https://i.imgur.com/WBKXT73.png">
 </p>
 <p align="left">
-  <img src="https://i.imgur.com/5qe7m1v.png" width="1100px" height="400px">
+  <img src="https://i.imgur.com/5qe7m1v.png">
 </p>
 
 ### Login
 <p align="left">
-  <img src="https://i.imgur.com/vXeDeAl.png" width="1100px" height="400px">
+  <img src="https://i.imgur.com/vXeDeAl.png">
 </p>
