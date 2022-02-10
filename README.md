@@ -5,7 +5,7 @@ Link to repository with backend: https://github.com/miszu98/freelance-backend
 ## Images 
 ### Home page
 <p align="left">
-  <img src="https://i.imgur.com/4NXE7db.png" width="1100px" height="400px">
+  <img src="https://i.imgur.com/4NXE7db.png">
 </p>
 
 ### Register
