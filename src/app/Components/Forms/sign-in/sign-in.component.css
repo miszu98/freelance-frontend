@@ -61,6 +61,9 @@ h1 {
     font-weight: bold;
     cursor: pointer;
 }
+#register-link:hover{
+    color: #001f3f;
+}
 
 hr {
     margin-top: 35px;
@@ -68,6 +71,10 @@ hr {
 .link-to-register {
     display: flex;
     justify-content: center;
+}
+
+.link-to-register span {
+    font-weight: bold;
 }
 
 ::ng-deep .mat-form-field .mat-focused .mat-form-field-label {
