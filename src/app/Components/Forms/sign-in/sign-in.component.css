@@ -92,3 +92,26 @@ hr {
 ::ng-deep .mat-checkbox .mat-accent .mat-checkbox-anim-unchecked-checked .mat-checkbox-checked {
     color: #001f3f;
 }
+
+
+#login-loading {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 45%;
+}
+
+:host .mat-spinner {
+    zoom: 0.3;
+}
+
+::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: white;
+}
+
+.errors {
+    margin-top: 15px;
+    color: rgb(199, 0, 0);
+    font-weight: bold;
+    text-align: center;
+}

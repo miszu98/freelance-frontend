@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { RegisterService } from 'src/app/Services/RegisterService/register.service';
 import { RegisterComponent } from '../register/register.component';
+import { SignInComponent } from '../sign-in/sign-in.component';
 
 @Component({
   selector: 'app-login',
@@ -33,6 +34,16 @@ export class LoginComponent implements OnInit {
         email: this.registerForm.get('email')?.value
       }
     })
+  }
+
+  public openSignInForm() {
+    this.dialog.closeAll();
+    let loginForm = this.dialog.open(SignInComponent,
+      {
+        // height: '500px',
+        height: '600px',
+        width: '450px'
+      });
   }
 
   public checkIfUserExist() {

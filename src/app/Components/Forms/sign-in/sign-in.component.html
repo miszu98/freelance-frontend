@@ -21,7 +21,8 @@
             </mat-form-field>
         </p>
         <div class="btns">
-            <button id="login-btn" (click)="auth()" mat-button>Continue</button>
+            <!-- <button id="login-btn" (click)="auth()" [disabled]="emptyFields()" mat-button>Continue</button> -->
+            <button id="login-btn" (click)="auth()" [disabled]="emptyFields()" mat-button><mat-spinner id="login-loading" *ngIf="authLoading"></mat-spinner><span *ngIf="authLoading != true">Continue</span></button>
         </div>
     </form>
     <div class="footer">
@@ -36,7 +37,12 @@
     </div>
     <hr>
     <div class="link-to-register">
-        <span>Not a member yet? <span id="register-link">Join now</span></span>
+        <span>Not a member yet? <span id="register-link" (click)="loadRegisterForm()">Join now</span></span>
+    </div>
+    <div class="errors">
+        <p *ngFor="let error of errors">
+            {{ error }}
+        </p>
     </div>
 
 </div>
