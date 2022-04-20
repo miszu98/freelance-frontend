@@ -141,6 +141,11 @@ span {
 }
 
 
+@media screen and (max-width: 550px) {
+    .top-clickable-service {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 550px) {
     .marketplace {
