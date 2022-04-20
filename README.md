@@ -1,6 +1,6 @@
 # FreelanceFrontend WIP
 
-Link to repository with backend: https://github.com/miszu98/freelance-backend
+Link to repository with backend: https://github.com/miszu98/freelance-core
 
 ## Images 
 ### Home page
