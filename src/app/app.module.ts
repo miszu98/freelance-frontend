@@ -26,13 +26,17 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { LoginComponent } from './Components/Forms/login/login.component';
 import { RegisterComponent } from './Components/Forms/register/register.component';
 import { SignInComponent } from './Components/Forms/sign-in/sign-in.component';
+import { HomePageComponent } from './Components/home-page/home-page.component';
+import { MainPageComponent } from './Components/main-page/main-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    SignInComponent
+    SignInComponent,
+    HomePageComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

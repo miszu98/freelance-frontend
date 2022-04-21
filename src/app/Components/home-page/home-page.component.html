@@ -1,0 +1,248 @@
+<div class="header">
+    <div class="menu">
+      <h1>Freelance</h1>
+      <span class="spacer"></span>
+      <div class="btns-menu">
+          <span (click)="openSignInForm()">Sign In</span>
+          <span (click)="openSignUpForm()">Join</span>
+          <span>Contact</span>
+      </div>
+    </div>
+    <div class="header-content">
+      <div class="searcher">
+        <div class="information">
+          <h2>
+            Find the perfect freelance services for your business
+          </h2>
+        </div>
+        <div style="display: flex;">
+          <mat-form-field class="search-field" appearance="outline">
+            <input matInput placeholder="Try 'building mobile app' ">
+          </mat-form-field>
+          <button class="search-btn" mat-button>Search</button>
+        </div>
+        <div class="popular-search-things">
+          <span style="margin-top: 4px;">Popular:</span>
+          <mat-chip-list aria-label="Fish selection">
+              <mat-chip>Website Design</mat-chip>
+              <mat-chip>WordPress</mat-chip>
+              <mat-chip color="primary" selected>Logo Design</mat-chip>
+              <mat-chip color="accent" selected>NFT Art</mat-chip>
+          </mat-chip-list>
+        </div>
+      </div>
+      <!-- <div class="header-image">
+        <img src="\assets\images\main-photo.png" alt="Here should be image">
+      </div> -->
+    </div>
+  </div>
+  <div class="trusted-by-block">
+    <div class="companies">
+      <span>Trusted by: </span>
+      <span>Facebook</span>
+      <span>Google</span>
+      <span>NETFLIX</span>
+    </div>
+  </div>
+  <div class="top-clickable-service">
+    <h1>The most searching services</h1>
+    <div class="services">
+      <mat-card>
+        <h3>Programming & Tech</h3>
+        <img src="\assets\images\coding.png" alt="Here should be image">
+      </mat-card>
+      <mat-card>
+        <h3>Graphics & Design</h3>
+        <img src="\assets\images\illustration-color.png" alt="Here should be image">
+      </mat-card>
+      <mat-card>
+        <h3>Video & Animation</h3>
+        <img src="\assets\images\animation.png" alt="Here should be image">
+      </mat-card>
+    </div>
+  </div>
+  <div class="popular-services">
+    <h1 id="popular-service-label">Popular professional services</h1>
+    <div class="carousel-services">
+      <carousel [arrowsTheme]="'dark'" [borderRadius]="50" [images]="popularServicesImages" [margin]="50" [height]="400" [cellsToShow]="5" #carousel>
+      </carousel>
+    </div>
+  </div>
+  <div class="description">
+      <div class="points">
+          <h1>A whole world of freelance talent at your fingertips</h1>
+          <div class="text">
+            <mat-icon>check_circle_outline</mat-icon><span>The best for every budget</span>
+          </div>
+          <p>Find high-quality services at every price point. No hourly rates, just project-based pricing.</p>
+          <div class="text">
+            <mat-icon>check_circle_outline</mat-icon><span>Quality work done quickly</span>
+          </div>
+          <p>Find the right freelancer to begin working on your project within minutes.</p>
+          <div class="text">
+            <mat-icon>check_circle_outline</mat-icon><span>Protected payments, every time</span>
+          </div>
+          <p>Always know what you'll pay upfront. Your payment isn't released until you approve the work.</p>
+          <div class="text">
+            <mat-icon>check_circle_outline</mat-icon><span>24/7 support</span>
+          </div>
+          <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
+      </div>
+      <div class="desc-image">
+        <img src="\assets\images\Office-365-2.jpg" alt="Here should be image">
+      </div>
+  </div>
+  
+  <div class="marketplace">
+      <h1>Explore the marketplace</h1>
+      <div class="row">
+        <div class="column">
+          <img src="\assets\images\data.png" alt="Here should be image">
+          <p>Data</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\document-editor.png" alt="Here should be image">
+          <p>Writting & Translation</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\hand-shake.png" alt="Here should be image">
+          <p>Business</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\illustration.png" alt="Here should be image">
+          <p>Graphics & Design</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\play.png" alt="Here should be image">
+          <p>Video & Animation</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\soundtrack.png" alt="Here should be image">
+          <p>Music & Audio</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\web-programming.png" alt="Here should be image">
+          <p>Programming & Tech</p>
+        </div>
+      </div>
+  </div>
+  <div class="footer">
+    <hr>
+    <div class="footer-info">
+      <h2>Freelance</h2><span>© Freelance International Ltd. 2022</span>
+    </div>
+  </div>
+  
+  <div class="mobile-header">
+    <div class="mobile-menu">
+      <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h1>Freelance</h1>
+      <span class="spacer"></span>
+      <div class="btns-menu">
+          <span>Join to us</span>
+      </div>
+    </div>
+    <mat-drawer-container class="example-container" autosize [hasBackdrop]="false">
+      <mat-drawer #drawer class="example-sidenav" mode="over">
+        <div class="mobile-btns-menu">
+          <p>Sign In</p>
+          <p>Sign Up</p>
+          <p>Contact</p>
+        </div>
+      </mat-drawer>
+      <div class="mobile-content">
+          <div class="header-block">
+            <div class="mobile-searcher">
+              <h2>
+                Find the perfect freelance services for your business
+              </h2>
+              <div style="display: flex;">
+                <mat-form-field class="mobile-search-field" appearance="outline">
+                  <input matInput placeholder="Try 'building mobile app' ">
+                </mat-form-field>
+                <button class="mobile-search-btn" mat-button>Search</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="trusted-by-block-mobile">
+        <div class="companies">
+          <span>Facebook</span>
+          <span>Google</span>
+          <span>NETFLIX</span>
+        </div>
+      </div>
+      <h1 id="popular-service-label">Popular professional services</h1>
+      <div class="carousel-services">
+        <carousel [arrowsTheme]="'dark'" [borderRadius]="50" [images]="popularServicesImages" [margin]="50" [height]="400" [cellsToShow]="1" #carousel>
+        </carousel>
+      </div>
+      <div class="description-mobile">
+        <div class="points-mobile">
+            <h1>A whole world of freelance talent at your fingertips</h1>
+            <div class="text">
+              <mat-icon>check_circle_outline</mat-icon><span>The best for every budget</span>
+            </div>
+            <p>Find high-quality services at every price point. No hourly rates, just project-based pricing.</p>
+            <div class="text">
+              <mat-icon>check_circle_outline</mat-icon><span>Quality work done quickly</span>
+            </div>
+            <p>Find the right freelancer to begin working on your project within minutes.</p>
+            <div class="text">
+              <mat-icon>check_circle_outline</mat-icon><span>Protected payments, every time</span>
+            </div>
+            <p>Always know what you'll pay upfront. Your payment isn't released until you approve the work.</p>
+            <div class="text">
+              <mat-icon>check_circle_outline</mat-icon><span>24/7 support</span>
+            </div>
+            <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
+        </div>
+        <div class="desc-image-mobile">
+          <img src="\assets\images\Office-365-2.jpg" alt="Here should be image">
+        </div>
+    </div>
+    <div class="marketplace-mobile">
+      <h1>Explore the marketplace</h1>
+      <div class="row">
+        <div class="column">
+          <img src="\assets\images\data.png" alt="Here should be image">
+          <p>Data</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\document-editor.png" alt="Here should be image">
+          <p>Writting & Translation</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\hand-shake.png" alt="Here should be image">
+          <p>Business</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\illustration.png" alt="Here should be image">
+          <p>Graphics & Design</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\play.png" alt="Here should be image">
+          <p>Video & Animation</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\soundtrack.png" alt="Here should be image">
+          <p>Music & Audio</p>
+        </div>
+        <div class="column">
+          <img src="\assets\images\web-programming.png" alt="Here should be image">
+          <p>Programming & Tech</p>
+        </div>
+      </div>
+  </div>
+  <div class="footer-mobile">
+    <hr>
+    <div class="footer-info">
+      <h2>Freelance</h2><span>© Freelance International Ltd. 2022</span>
+    </div>
+  </div>
+    </mat-drawer-container>
+  </div>
+  
+  
