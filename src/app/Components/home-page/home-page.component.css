@@ -545,3 +545,8 @@ hr {
     }
 
 }
+
+
+.mobile-btns-menu p {
+    cursor: pointer;
+}

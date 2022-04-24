@@ -1,14 +1,50 @@
 .header {
-
+    width: 100%;
+    display: block;
 }
 
 
 .content {
     margin-left: 20%;
     margin-right: 20%;
-    display:flex;
+    /* display: flex; */
+    display: block;
 }
 
+@media screen and (max-width: 1650px) {
+    .content{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .content{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .content{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .content{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .content{
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+}
 .content h1 {
     margin-top: 25px;
     color: rgb(68, 68, 68);
@@ -17,45 +53,175 @@
 
 .search {
     margin-left: 35px;
-        /* margin-top: 10px; */
-        margin-top: 15px;
+    margin-top: 15px;
+    float: left;
+    /* width: 70%; */
+    /* float: left; */
 }
 
 ::ng-deep .mat-form-field {
     width: 25vw;
-    /* height: 500px; */
     height: 5vh;
     font-weight: bold;
     font-size: 14px;
     color: rgb(85, 85, 85);
 }
 
-.categories {
-    margin-left: 20%;
-    margin-right: 20%;
-    /* display: flex; */
-    justify-content: space-between;
-}
-
-.categories span {
-    margin-right: 2%;
-    font-weight: bold;
-    color: #001f3f;
-    cursor: pointer;
-}
-
-hr {
-    width: 100%;
-    /* margin-bottom: 10px; */
-    /* margin-top: 10px; */
-    border-top: 1px solid rgb(214, 214, 214);
-}
-
 .btns {
     margin-top: 25px;
-    /* margin-left: 5%; */
 }
 
 .btns span {
     font-weight: bold;
+}
+
+
+.categories {
+    width: 100%;
+    /* height: auto; */
+    /* min-height: 30px; */
+    min-height: 40px;
+    background-color: #001f3f;
+    color: white;
+    justify-content: center;
+    font-weight: bold;
+    float: left;
+}
+
+.categories span {
+    margin-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    /* transform: translateY(50%); */
+    cursor: pointer;
+}
+
+.categories span:hover {
+    color: rgb(202, 202, 202);
+}
+
+.header-btns {
+    float: right;
+    /* margin-top: 27px; */
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-btns span {
+    cursor: pointer;
+    /* margin-left: 15px; */
+    margin-right: 15px;
+}
+
+.header-btns span:hover {
+    color: #001f3f;
+}
+
+.categories-content {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5px;
+}
+
+
+
+.header-btns button {
+    margin-right: 15px;
+    /* margin-left: 15px; */
+    background-color: #001f3f;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.header-btns button:hover {
+    color: #001f3f;
+    background-color: white;
+}
+
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #001f3f !important;
+}
+
+
+@media screen and (max-width: 1650px) {
+    .categories-content{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .categories-content{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .categories-content{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .categories-content{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .categories-content{
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+}
+
+.main-content {
+    margin-top: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    float: left;
+    font-size: 19px;
+}
+
+
+@media screen and (max-width: 1650px) {
+    .main-content{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .main-content{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .main-content{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .main-content{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .main-content{
+        margin-right: 4%;
+        margin-left: 4%;
+    }
 }

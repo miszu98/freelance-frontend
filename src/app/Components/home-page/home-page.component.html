@@ -147,8 +147,8 @@
     <mat-drawer-container class="example-container" autosize [hasBackdrop]="false">
       <mat-drawer #drawer class="example-sidenav" mode="over">
         <div class="mobile-btns-menu">
-          <p>Sign In</p>
-          <p>Sign Up</p>
+          <p (click)="openSignInForm()">Sign In</p>
+          <p (click)="openSignUpForm()">Sign Up</p>
           <p>Contact</p>
         </div>
       </mat-drawer>
