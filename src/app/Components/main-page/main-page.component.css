@@ -55,12 +55,69 @@
     margin-left: 35px;
     margin-top: 15px;
     float: left;
-    /* width: 70%; */
-    /* float: left; */
+    width: 50%;
 }
 
-::ng-deep .mat-form-field {
-    width: 25vw;
+#search-button {
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.sort-and-offers-num {
+    width: 100%;
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.filter {
+    margin-top: 50px;
+    display: flex;
+}
+
+.filter button {
+    font-weight: bold;
+    font-family: 'Quicksand';
+    border: 1px solid #888888;
+    font-size: 17px;
+}
+
+.filter-options {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    font-weight: bold;
+}
+.mat-checkbox {
+    font-family: 'Quicksand';
+    color: rgb(101, 101, 101);
+}
+
+::ng-deep.mat-menu-panel {
+    max-width: none !important;
+    margin-top: 10px;
+}
+
+h4 {
+    margin-left: 15px;
+}
+
+hr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#filter-category {
+    margin-right: 10px;
+}
+
+:host .mat-form-field {
+    /* width: 25vw; */
+    width: 100%;
     height: 5vh;
     font-weight: bold;
     font-size: 14px;
@@ -80,7 +137,8 @@
     width: 100%;
     /* height: auto; */
     /* min-height: 30px; */
-    min-height: 40px;
+    /* min-height: 40px; */
+    height: auto;
     background-color: #001f3f;
     color: white;
     justify-content: center;
@@ -92,7 +150,6 @@
     margin-right: 25px;
     margin-top: 10px;
     margin-bottom: 50px;
-    /* transform: translateY(50%); */
     cursor: pointer;
 }
 
@@ -121,7 +178,8 @@
 .categories-content {
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 
@@ -136,10 +194,10 @@
 }
 
 
-.header-btns button:hover {
+/* .header-btns button:hover {
     color: #001f3f;
     background-color: white;
-}
+} */
 
 
 ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
@@ -183,11 +241,16 @@
 }
 
 .main-content {
-    margin-top: 25px;
+    margin-top: 100px;
     margin-left: 20%;
     margin-right: 20%;
-    float: left;
+    /* float: left; */
     font-size: 19px;
+
+}
+
+.main-content h2 {
+    margin-bottom: 5px;
 }
 
 

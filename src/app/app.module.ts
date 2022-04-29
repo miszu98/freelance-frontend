@@ -21,6 +21,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatMenuModule } from '@angular/material/menu';
 
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { LoginComponent } from './Components/Forms/login/login.component';
@@ -57,7 +58,8 @@ import { MainPageComponent } from './Components/main-page/main-page.component';
     MatProgressSpinnerModule,
     FormsModule,
     ReactiveFormsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

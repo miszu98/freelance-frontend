@@ -5,8 +5,8 @@
             <mat-form-field appearance="outline" floatLabel="never">
                 <input matInput placeholder="What service are you looking for today?">
              </mat-form-field>
-             <button mat-button><mat-icon>search</mat-icon></button>
         </div>
+        <button id="search-button" mat-button><mat-icon>search</mat-icon></button>
         <div class="header-btns">
             <span>English</span>     
             <span>EUR</span>
@@ -37,13 +37,63 @@
             <span>Business</span>
         </div>
     </div>
-    <!-- <hr> -->
-    <!-- <hr> -->
 </div>
 <div class="main-content">
-    <span>Freelance > </span><span>Example category</span> >
-    <h2>Category name</h2>
-    <span>Category description</span>
+    <div>
+        <span>Freelance > </span><span>Example category > </span> 
+        <h2>Category name</h2>
+        <span style="font-weight: bold; color: rgb(135, 135, 135); font-size: 17px;">Category description</span>    
+    </div>
+
+    <div class="filter">
+        <div id="filter-category">
+            <button mat-button [matMenuTriggerFor]="menu">Seller Details <mat-icon>keyboard_arrow_down</mat-icon></button>
+            <mat-menu #menu="matMenu">
+                <h4>Seller level</h4>
+                <div class="filter-options">
+                    <mat-checkbox style="margin-right: 35px;" class="example-margin">Top Rated Seller (0) </mat-checkbox>
+                    <mat-checkbox class="example-margin">Level Two (0)</mat-checkbox>
+                </div>
+                <div class="filter-options">
+                    <mat-checkbox style="margin-right: 85px;" class="example-margin">Level One (0) </mat-checkbox>
+                    <mat-checkbox class="example-margin">New Seller (0)</mat-checkbox>
+                </div>
+                <hr>
+                <h4>Seller Speaks</h4>
+                <div class="filter-options">
+                    <mat-checkbox style="margin-right: 35px;" class="example-margin">Polish (0)</mat-checkbox>
+                    <mat-checkbox class="example-margin">Spanish (0)</mat-checkbox>
+                </div>
+                <div class="filter-options">
+                    <mat-checkbox style="margin-right: 85px;" class="example-margin">English (0)</mat-checkbox>
+                    <mat-checkbox class="example-margin">French (0)</mat-checkbox>
+                </div>
+            </mat-menu>
+        </div>
+        <div id="filter-category">
+            <button mat-button [matMenuTriggerFor]="menu">Budget <mat-icon>keyboard_arrow_down</mat-icon></button>
+            <mat-menu #menu="matMenu">
+            </mat-menu>
+        </div>
+        <div id="filter-category">
+            <button mat-button [matMenuTriggerFor]="menu">Delivery Time <mat-icon>keyboard_arrow_down</mat-icon></button>
+            <mat-menu #menu="matMenu">
+            </mat-menu>
+        </div>
+
+
+
+    </div>
+
+    <div class="sort-and-offers-num">
+        <div style="float: left;">
+            <span>1.000 services available</span>
+        </div>
+        <div style="float: right;">
+            <span>Sort by Best Selling</span>
+        </div>
+    </div>
+
 </div>
 
 
