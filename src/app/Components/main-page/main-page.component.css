@@ -53,7 +53,7 @@
 
 .search {
     margin-left: 35px;
-    margin-top: 15px;
+    margin-top: 25px;
     float: left;
     width: 50%;
 }
@@ -61,6 +61,10 @@
 #search-button {
     margin-top: 25px;
     margin-left: 5px;
+    font-weight: bold;
+    background-color: #001f3f;
+    color: white;
+    font-size: 18px;
 }
 
 .sort-and-offers-num {
@@ -185,7 +189,7 @@ hr {
 
 
 .header-btns button {
-    margin-right: 15px;
+    /* margin-right: 15px; */
     /* margin-left: 15px; */
     background-color: #001f3f;
     color: white;
@@ -286,5 +290,100 @@ hr {
     .main-content{
         margin-right: 4%;
         margin-left: 4%;
+    }
+}
+
+#price input {
+    height: 25px;
+    width: 110px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 1px solid #001f3f;
+    border-radius: 12px;
+}
+
+.mat-radio-group {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.offers {
+    margin-top: 30px;
+}
+
+.offer {
+    width: 300px;
+    height: 450px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.info-seller {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.stars {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.star-icon {
+    color: rgb(252, 202, 0);
+}
+
+.price {
+    display: block;
+    margin-right: 10px;
+}
+
+.title {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    /* width: 25%; */
+    width: 340px;
+    /* padding: 0 10px; */
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  @media screen and (max-width: 2160px) {
+    .column {
+       width: 27%;
+       margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .column {
+       width: 33%;
+       margin-right: 50px;
     }
 }

@@ -23,6 +23,8 @@
     "@ngmodule/material-carousel": "^0.6.0",
     "angular-responsive-carousel": "^2.1.2",
     "material-icons": "^1.10.6",
+    "primeicons": "^5.0.0",
+    "primeng": "^13.3.3",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

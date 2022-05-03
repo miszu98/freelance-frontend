@@ -2,11 +2,15 @@
     <div class="content">
         <h1 style="float: left;">Freelance</h1>
         <div class="search">
-            <mat-form-field appearance="outline" floatLabel="never">
+            <!-- <mat-form-field appearance="outline" floatLabel="never">
                 <input matInput placeholder="What service are you looking for today?">
-             </mat-form-field>
+             </mat-form-field> -->
+             <span class="p-float-label">
+                <input id="float-input" type="text" pInputText> 
+                <label for="float-input">Username</label>
+            </span>
         </div>
-        <button id="search-button" mat-button><mat-icon>search</mat-icon></button>
+        <button id="search-button" mat-button>Search</button>
         <div class="header-btns">
             <span>English</span>     
             <span>EUR</span>
@@ -51,33 +55,51 @@
             <mat-menu #menu="matMenu">
                 <h4>Seller level</h4>
                 <div class="filter-options">
-                    <mat-checkbox style="margin-right: 35px;" class="example-margin">Top Rated Seller (0) </mat-checkbox>
-                    <mat-checkbox class="example-margin">Level Two (0)</mat-checkbox>
+                    <mat-checkbox style="margin-right: 50px;" class="example-margin" (click) = "$event.stopPropagation()">Top Rated Seller</mat-checkbox>
+                    <mat-checkbox class="example-margin" (click) = "$event.stopPropagation()">Level Two</mat-checkbox>
                 </div>
                 <div class="filter-options">
-                    <mat-checkbox style="margin-right: 85px;" class="example-margin">Level One (0) </mat-checkbox>
-                    <mat-checkbox class="example-margin">New Seller (0)</mat-checkbox>
+                    <mat-checkbox style="margin-right: 100px;" class="example-margin" (click) = "$event.stopPropagation()">Level One</mat-checkbox>
+                    <mat-checkbox class="example-margin" (click) = "$event.stopPropagation()">New Seller</mat-checkbox>
                 </div>
                 <hr>
                 <h4>Seller Speaks</h4>
                 <div class="filter-options">
-                    <mat-checkbox style="margin-right: 35px;" class="example-margin">Polish (0)</mat-checkbox>
-                    <mat-checkbox class="example-margin">Spanish (0)</mat-checkbox>
+                    <mat-checkbox style="margin-right: 132px;" class="example-margin" (click) = "$event.stopPropagation()">Polish</mat-checkbox>
+                    <mat-checkbox class="example-margin" (click) = "$event.stopPropagation()">Spanish</mat-checkbox>
                 </div>
                 <div class="filter-options">
-                    <mat-checkbox style="margin-right: 85px;" class="example-margin">English (0)</mat-checkbox>
-                    <mat-checkbox class="example-margin">French (0)</mat-checkbox>
+                    <mat-checkbox style="margin-right: 123px;" class="example-margin" (click) = "$event.stopPropagation()">English</mat-checkbox>
+                    <mat-checkbox class="example-margin" (click) = "$event.stopPropagation()">French</mat-checkbox>
                 </div>
             </mat-menu>
         </div>
         <div id="filter-category">
-            <button mat-button [matMenuTriggerFor]="menu">Budget <mat-icon>keyboard_arrow_down</mat-icon></button>
-            <mat-menu #menu="matMenu">
+            <button mat-button [matMenuTriggerFor]="menu1">Budget <mat-icon>keyboard_arrow_down</mat-icon></button>
+            <mat-menu #menu1="matMenu">
+                <div class="filter-options">
+                    <div id="price">
+                        <h4>Min</h4>
+                        <input type="number" min="0" (click) = "$event.stopPropagation()">
+                    </div>
+                    <div id="price">
+                        <h4>Max</h4>
+                        <input type="number" min="0" (click) = "$event.stopPropagation()">
+                    </div>
+                </div>
             </mat-menu>
         </div>
         <div id="filter-category">
-            <button mat-button [matMenuTriggerFor]="menu">Delivery Time <mat-icon>keyboard_arrow_down</mat-icon></button>
-            <mat-menu #menu="matMenu">
+            <button mat-button [matMenuTriggerFor]="menu2">Delivery Time <mat-icon>keyboard_arrow_down</mat-icon></button>
+            <mat-menu #menu2="matMenu">
+                <div class="filter-options">
+                    <mat-radio-group>
+                        <mat-radio-button class="example-margin" value="24H" (click) = "$event.stopPropagation()">Express 24H</mat-radio-button><br><br>
+                        <mat-radio-button class="example-margin" value="3 days" (click) = "$event.stopPropagation()">Up to 3 days</mat-radio-button><br><br>
+                        <mat-radio-button class="example-margin" value="7 days" (click) = "$event.stopPropagation()">Up to 7 days</mat-radio-button><br><br>
+                        <mat-radio-button class="example-margin" value="Anytime" (click) = "$event.stopPropagation()">Anytime</mat-radio-button><br><br>
+                    </mat-radio-group>
+                </div>
             </mat-menu>
         </div>
 
@@ -92,6 +114,205 @@
         <div style="float: right;">
             <span>Sort by Best Selling</span>
         </div>
+    </div>
+    <br>
+    <div class="offers">
+        <div class="row">
+            <div class="column">
+                <div class="offer">
+                    <img alt="Image" src="\assets\images\offer.png" width="100%"><img/>
+                    <div class="info-seller">
+                        <img src="\assets\images\avatar.PNG" alt="Here should be avatar" width="25px" height="25px" style="margin-right: 10px;">
+                        <span>Nickname</span>
+                    </div>
+                    <div class="title">
+                        <span>I will fix wordpress errors, issues, problem or bugs</span>
+                    </div>
+                    <div class="stars">
+                        <mat-icon class="star-icon">star</mat-icon><span style="color: rgb(252, 202, 0); font-weight: bold;">5.0</span>
+                        <span style="margin-left: 5px; font-weight: bold; color: #939393;">(79)</span>
+                    </div>
+        
+                    <hr>
+                    <div class="price">
+                        <div style="float:right;margin-right: 5px;">
+                            <span>Starting At</span><br>
+                            <span>4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="offer">
+                    <img alt="Image" src="\assets\images\offer.png" width="100%"><img/>
+                    <div class="info-seller">
+                        <img src="\assets\images\avatar.PNG" alt="Here should be avatar" width="25px" height="25px" style="margin-right: 10px;">
+                        <span>Nickname</span>
+                    </div>
+                    <div class="title">
+                        <span>I will fix wordpress errors, issues, problem or bugs</span>
+                    </div>
+                    <div class="stars">
+                        <mat-icon class="star-icon">star</mat-icon><span style="color: rgb(252, 202, 0); font-weight: bold;">5.0</span>
+                        <span style="margin-left: 5px; font-weight: bold; color: #939393;">(79)</span>
+                    </div>
+        
+                    <hr>
+                    <div class="price">
+                        <div style="float:right;margin-right: 5px;">
+                            <span>Starting At</span><br>
+                            <span>4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="offer">
+                    <img alt="Image" src="\assets\images\offer.png" width="100%"><img/>
+                    <div class="info-seller">
+                        <img src="\assets\images\avatar.PNG" alt="Here should be avatar" width="25px" height="25px" style="margin-right: 10px;">
+                        <span>Nickname</span>
+                    </div>
+                    <div class="title">
+                        <span>I will fix wordpress errors, issues, problem or bugs</span>
+                    </div>
+                    <div class="stars">
+                        <mat-icon class="star-icon">star</mat-icon><span style="color: rgb(252, 202, 0); font-weight: bold;">5.0</span>
+                        <span style="margin-left: 5px; font-weight: bold; color: #939393;">(79)</span>
+                    </div>
+        
+                    <hr>
+                    <div class="price">
+                        <div style="float:right;margin-right: 5px;">
+                            <span>Starting At</span><br>
+                            <span>4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="offer">
+                    <img alt="Image" src="\assets\images\offer.png" width="100%"><img/>
+                    <div class="info-seller">
+                        <img src="\assets\images\avatar.PNG" alt="Here should be avatar" width="25px" height="25px" style="margin-right: 10px;">
+                        <span>Nickname</span>
+                    </div>
+                    <div class="title">
+                        <span>I will fix wordpress errors, issues, problem or bugs</span>
+                    </div>
+                    <div class="stars">
+                        <mat-icon class="star-icon">star</mat-icon><span style="color: rgb(252, 202, 0); font-weight: bold;">5.0</span>
+                        <span style="margin-left: 5px; font-weight: bold; color: #939393;">(79)</span>
+                    </div>
+        
+                    <hr>
+                    <div class="price">
+                        <div style="float:right;margin-right: 5px;">
+                            <span>Starting At</span><br>
+                            <span>4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="offer">
+                    <img alt="Image" src="\assets\images\offer.png" width="100%"><img/>
+                    <div class="info-seller">
+                        <img src="\assets\images\avatar.PNG" alt="Here should be avatar" width="25px" height="25px" style="margin-right: 10px;">
+                        <span>Nickname</span>
+                    </div>
+                    <div class="title">
+                        <span>I will fix wordpress errors, issues, problem or bugs</span>
+                    </div>
+                    <div class="stars">
+                        <mat-icon class="star-icon">star</mat-icon><span style="color: rgb(252, 202, 0); font-weight: bold;">5.0</span>
+                        <span style="margin-left: 5px; font-weight: bold; color: #939393;">(79)</span>
+                    </div>
+        
+                    <hr>
+                    <div class="price">
+                        <div style="float:right;margin-right: 5px;">
+                            <span>Starting At</span><br>
+                            <span>4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="offer">
+                    <img alt="Image" src="\assets\images\offer.png" width="100%"><img/>
+                    <div class="info-seller">
+                        <img src="\assets\images\avatar.PNG" alt="Here should be avatar" width="25px" height="25px" style="margin-right: 10px;">
+                        <span>Nickname</span>
+                    </div>
+                    <div class="title">
+                        <span>I will fix wordpress errors, issues, problem or bugs</span>
+                    </div>
+                    <div class="stars">
+                        <mat-icon class="star-icon">star</mat-icon><span style="color: rgb(252, 202, 0); font-weight: bold;">5.0</span>
+                        <span style="margin-left: 5px; font-weight: bold; color: #939393;">(79)</span>
+                    </div>
+        
+                    <hr>
+                    <div class="price">
+                        <div style="float:right;margin-right: 5px;">
+                            <span>Starting At</span><br>
+                            <span>4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="offer">
+                    <img alt="Image" src="\assets\images\offer.png" width="100%"><img/>
+                    <div class="info-seller">
+                        <img src="\assets\images\avatar.PNG" alt="Here should be avatar" width="25px" height="25px" style="margin-right: 10px;">
+                        <span>Nickname</span>
+                    </div>
+                    <div class="title">
+                        <span>I will fix wordpress errors, issues, problem or bugs</span>
+                    </div>
+                    <div class="stars">
+                        <mat-icon class="star-icon">star</mat-icon><span style="color: rgb(252, 202, 0); font-weight: bold;">5.0</span>
+                        <span style="margin-left: 5px; font-weight: bold; color: #939393;">(79)</span>
+                    </div>
+        
+                    <hr>
+                    <div class="price">
+                        <div style="float:right;margin-right: 5px;">
+                            <span>Starting At</span><br>
+                            <span>4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="offer">
+                    <img alt="Image" src="\assets\images\offer.png" width="100%"><img/>
+                    <div class="info-seller">
+                        <img src="\assets\images\avatar.PNG" alt="Here should be avatar" width="25px" height="25px" style="margin-right: 10px;">
+                        <span>Nickname</span>
+                    </div>
+                    <div class="title">
+                        <span>I will fix wordpress errors, issues, problem or bugs</span>
+                    </div>
+                    <div class="stars">
+                        <mat-icon class="star-icon">star</mat-icon><span style="color: rgb(252, 202, 0); font-weight: bold;">5.0</span>
+                        <span style="margin-left: 5px; font-weight: bold; color: #939393;">(79)</span>
+                    </div>
+        
+                    <hr>
+                    <div class="price">
+                        <div style="float:right;margin-right: 5px;">
+                            <span>Starting At</span><br>
+                            <span>4.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
 </div>

@@ -22,6 +22,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatRadioModule } from '@angular/material/radio';
+
+// primeNG
+import { InputTextModule } from 'primeng/inputtext';
 
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { LoginComponent } from './Components/Forms/login/login.component';
@@ -59,7 +63,9 @@ import { MainPageComponent } from './Components/main-page/main-page.component';
     FormsModule,
     ReactiveFormsModule,
     MatCheckboxModule,
-    MatMenuModule
+    MatMenuModule,
+    MatRadioModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
